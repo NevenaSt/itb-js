@@ -1,0 +1,60 @@
+p {
+  color: purple;
+}
+/*Kada vise elemenata imaju isto svojstvo*/
+h3,
+h4 {
+  color: orange;
+}
+.desno_poravnanje {
+  text-align: right;
+}
+.crveni_tekst {
+  color: red;
+}
+.drugi {
+  background-color: yellow;
+}
+#treci {
+  background-color: bisque;
+  font-style: italic;
+  border: solid 3px;
+  border-radius: 10%;
+}
+/*Prioritet selektora: element < klasa < ID*/
+li {
+  color: limegreen;
+}
+.stavka {
+  color: blue;
+}
+#cetvrta_stavka {
+  color: brown;
+}
+/*Kombinator razmak - svi potomci u div-u koji su p tag*/
+
+div p {
+  color: aquamarine;
+}
+/*Svi potomci u div-u koji su direktni potomci*/
+div > p {
+  border: 1px solid green;
+}
+
+a {
+  color: lime;
+  text-decoration: none;
+}
+a:visited {
+  color: blueviolet;
+}
+/*Pseudo selektori*/
+p:first-child {
+  font-weight: bold;
+}
+li:nth-child(2n) {
+  font-weight: bold;
+}
+li:hover {
+  background-color: yellow;
+}
